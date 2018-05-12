@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Selectores avanzados de CSS</h1>
+
+    <section class="the-ones-you-know">
+      <p>selector de elementos - <code>p</code></p>
+      <p>selector de clase - <code>.class</code></p>
+      <p>selector de id - <code>#id</code> </p>
+    </section>
+
+    <section class="universal">
+      <h2><span>*</span>Selector universal</h2>
+      <p>Este tipo de selector selecciona TODO tipo de elemento sin importar su clase o id. (Excepto ::before & ::after)</p>
+      <ul>
+        <li>Lorem</li>
+        <li>Ipsum</li>
+        <li>Dolor</li>
+        <li><a href="#">Sit amet</a></li>
+      </ul>
+    </section>
+
+    <section class="hijo-inmediato">
+      <h2><span>></span>Hijo inmediato</h2>
+      <p>Puedes crear selectores como este: </p>
+      <code>.hijo-inmediato p</code>
+      <p>Eso seleccionara todos los parrafos dentro de la clase .hijo-inmediato</p>
+      <div class="example">
+        <p>Pero <code>.hijo-inmediato > p</code> no afectara este parrafo</p>
+      </div>
+    </section>
+
+    <section class="hermano-proximo">
+      <h2> <span>+</span>Hermano proximo</h2>
+      <div class="box"></div>
+      <div class="box"></div>
+      <!-- <a href="#">uwu</a> -->
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+
+    <section class="hermano-general">
+      <h2><span>~</span>Hermano general</h2>
+      <div class="box"></div>
+      <div class="box"></div>
+      <a href="#">salu2</a>
+      <div class="box"></div>
+      <div class="box"></div>
+    </section>
+
+    <section class="atributo">
+      <h2><span>[ ]</span>Atr</h2>
+      <a href="https://www.google.com" class="link-one">Google</a>
+      <a href="https://www.google.ca" class="link-two">Google Canada</a>
+      <a href="about.html" class="link-three">About page</a>
+      <a href="http://awesomesocialnetwork.com" class="link-four" target="_blank">Socialize</a>
+      <a href="ebook.pdf" class="link-five">PDF file</a>
+      <a href="#" class="another-link">Yet another link</a>
+    </section>
+
+
+  </body>
+</html>
